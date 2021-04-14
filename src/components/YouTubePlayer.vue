@@ -29,7 +29,8 @@ export default {
         "N91SXVggrhM",
         "ZRnmxQlVDPw",
         "ZNCRWgFSX3g",
-        "CmHF_UJGVRI"
+        "CmHF_UJGVRI",
+        "commit test"
       ]
     };
   },
