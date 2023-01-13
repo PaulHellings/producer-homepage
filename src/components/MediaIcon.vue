@@ -24,6 +24,7 @@ export default {
   opacity: 0.85;
   -webkit-transition: opacity 0.4s; /* For Safari 3.1 to 6.0 */
   transition: opacity 0.4s;
+  max-width:80px;
 }
 
 .media-icon:hover {
