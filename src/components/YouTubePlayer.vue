@@ -32,7 +32,8 @@ export default {
         'CmHF_UJGVRI',
         'J1nh-q1DtyU',
         'xhrTQPyJIwc',
-        '1EeMYqc3auA'
+        '1EeMYqc3auA',
+        'jnLVC0Vxiec'
       ],
     };
   },
@@ -58,28 +59,28 @@ export default {
 
 <style>
 .youtube-embed {
-  position:       relative;
-  width:          100%;
-  height:         0;
+  position: relative;
+  width: 100%;
+  height: 0;
   padding-bottom: 56.25%;
 }
 
 .youtube-embed iframe {
   position: absolute;
-  top:      0;
-  left:     0;
-  width:    100%;
-  height:   100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .control.previous {
   position: absolute;
-  top:      0;
-  bottom:   0;
-  left:     0;
-  right:    0;
-  margin:   auto;
-  width:    50%;
-  height:   30%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: 30%;
 }
 </style>
