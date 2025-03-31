@@ -33,7 +33,9 @@ export default {
         'J1nh-q1DtyU',
         'xhrTQPyJIwc',
         '1EeMYqc3auA',
-        'jnLVC0Vxiec'
+        'jnLVC0Vxiec',
+        'rF0b4tNYUGU',
+        '1dQIiU-E_xk'
       ],
     };
   },
