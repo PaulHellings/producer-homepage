@@ -76,7 +76,7 @@ export default {
         },
         {
           url: "https://space-enigma.bandcamp.com ",
-          name: "Bandcamp Space Enigma",
+          name: "Space Enigma",
           class: "fab fa-bandcamp",
         },
       ],
@@ -93,7 +93,8 @@ export default {
 <style>
 .media-icons {
   text-align: center;
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

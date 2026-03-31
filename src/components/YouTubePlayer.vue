@@ -1,7 +1,10 @@
 <template>
   <div class="youtube-player">
-    <h2>Latest Vid From Paul's YouTube Channel</h2>
-    <youtube :video-id="latestVideo" class="youtube-embed"></youtube>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="mb-0">{{ currentVideoId ? 'Random' : 'Latest' }} Vid From Paul's YouTube Channel</h2>
+      <button class="btn btn-outline-dark btn-sm" @click="setRandomVideo">Randomize video</button>
+    </div>
+    <youtube :video-id="currentVideo" class="youtube-embed"></youtube>
   </div>
 </template>
 
@@ -36,23 +39,27 @@ export default {
         'jnLVC0Vxiec',
         'rF0b4tNYUGU',
         '1dQIiU-E_xk',
-        'Mi3UMnxw4qI'
+        'Mi3UMnxw4qI',
+        'RPtRlgob1GM'
       ],
+      currentVideoId: null,
     };
   },
 
   computed: {
-    randomVideo() {
-      let rn = this.randomInteger(0, this.allVideos.length - 1);
-      return this.allVideos[rn];
-    },
-
-    latestVideo() {
+    currentVideo() {
+      if (this.currentVideoId) {
+        return this.currentVideoId;
+      }
       return this.allVideos[this.allVideos.length - 1];
     },
   },
 
   methods: {
+    setRandomVideo() {
+      let rn = this.randomInteger(0, this.allVideos.length - 1);
+      this.currentVideoId = this.allVideos[rn];
+    },
     randomInteger(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     },
